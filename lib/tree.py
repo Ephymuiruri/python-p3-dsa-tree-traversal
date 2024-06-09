@@ -9,6 +9,6 @@ class Tree:
       if node['id'] == id:
         return node
       if'children' in node:
-        nodes_to_visit.extend(node['children'])
+        nodes_to_visit = node['children']+ nodes_to_visit
     return None
 
